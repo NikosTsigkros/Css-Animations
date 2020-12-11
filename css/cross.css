@@ -1,0 +1,63 @@
+:root {
+    --cross-color: #7641f1;
+    --cross-border-color: #3b00c4;
+    --background-color: #9b93e2;
+}
+
+.cross {
+    background-color: var(--cross-color);
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid var(--cross-border-color);
+    animation-name: turn-around;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes turn-around {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cross:before {
+    content: "";
+    background-color: var(--cross-color);
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    border-left: 2px solid var(--cross-border-color);
+    border-top: 2px solid var(--cross-border-color);
+    border-right: 2px solid var(--cross-border-color);
+}
+
+.cross:after {
+    content: "";
+    background-color: var(--cross-color);
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    left: 50px;
+    bottom: -52px;
+    border-left: 2px solid var(--cross-border-color);
+    border-bottom: 2px solid var(--cross-border-color);
+    border-right: 2px solid var(--cross-border-color);
+}
+
+body {
+    background-color: var(--background-color);
+}

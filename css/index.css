@@ -1,0 +1,75 @@
+#menu {
+    background-color: #333;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-right: 5px solid #000;
+}
+
+.animation-container {
+    /* background-color: blue; */
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* @media(min-width: 1000px) {
+    #menu {
+        width: 10%;
+    }
+    .preview-container {
+        width: 90%;
+    }
+} */
+
+.preview-container {
+    /* background-color: red; */
+    width: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.button-container {
+    /* background-color: red; */
+    margin: 2em;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 1em;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-heart:hover {
+    background-color: #FFC0CB;
+}
+
+.btn-cross:hover {
+    background-color: #9B93E2;
+}
