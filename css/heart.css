@@ -1,0 +1,80 @@
+:root {
+    --heart-color-1: pink;
+    --heart-color-2: #f18194;
+    --background-color: #fff;
+}
+
+.animation-container {
+    /* background-color: blue; */
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-45deg);
+}
+
+.heart {
+    background-color: var(--heart-color-1);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.heart:before {
+    content: "";
+    background-color: var(--heart-color-1);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 50px;
+    border-radius: 50%;
+}
+
+.heart:after {
+    content: "";
+    background-color: var(--heart-color-1);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    border-radius: 50%;
+
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+body {
+    animation-name: bg-beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bg-beat {
+    0% {
+        background-color: var(--background-color);
+    }
+    50% {
+        background-color: var(--heart-color-2);
+    }
+}
