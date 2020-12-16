@@ -64,12 +64,14 @@
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+    font-weight: 900;
+    font-size: 1em;
 }
 
-.btn-heart:hover {
+.btn-heart:hover, .btn-heart.active {
     background-color: #FFC0CB;
 }
 
-.btn-cross:hover {
+.btn-cross:hover, .btn-cross.active {
     background-color: #9B93E2;
 }
